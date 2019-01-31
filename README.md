@@ -1,14 +1,38 @@
 # stateful_view_model_widget
 
-A new Flutter package project.
+Model–View–ViewModel (MVVM) is a software architectural pattern.
+[Read the full article on wikipedia](https://en.wikipedia.org/wiki/Model–view–viewmodel)
 
-## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## Installation ❤ 
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+First, add stateful_view_model_widget as a [dependency in your pubspec.yaml file.](https://flutter.io/docs/development/packages-and-plugins/using-packages)
+
+## Example 👀
+
+We uploaded a small example project: [stateful_vm_example](https://github.com/tikkrapp/stateful_mvvm_example)
+
+## Usage
+
+
+The ViewModel:
+
+```
+import 'package:stateful_view_model/stateful_view_model.dart';
+
+
+
+
+
+```
+
+The View:
+
+```
+import 'package:stateful_view_model_widget/stateful_view_model_widget.dart';
+
+
+
+```
+
+

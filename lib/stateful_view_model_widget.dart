@@ -6,9 +6,9 @@ import 'package:flutter/widgets.dart';
 import 'package:stateful_view_model/stateful_view_model.dart';
 
 abstract class StatefulViewModelWidget<W extends StatefulWidget,
-S extends Cloneable<S>, VM extends StatefulViewModel<S>> extends State<W> {
+    S extends Cloneable<S>, VM extends StatefulViewModel<S>> extends State<W> {
   final List<StreamSubscription> _subscriptionsList =
-  List<StreamSubscription>();
+      List<StreamSubscription>();
 
   S _state;
 

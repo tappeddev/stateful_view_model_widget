@@ -46,8 +46,6 @@ abstract class StatefulViewModelWidget<W extends StatefulWidget,
 
   Widget buildState(S state);
 
-  Widget buildNullState() => Container();
-
   @override
   Widget build(BuildContext context) => buildState(_state);
 

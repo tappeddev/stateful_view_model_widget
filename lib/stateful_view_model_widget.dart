@@ -1,6 +1,7 @@
 library stateful_view_model_widget;
 
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:stateful_view_model/stateful_view_model.dart';
@@ -38,8 +39,9 @@ abstract class StatefulViewModelWidget<W extends StatefulWidget,
 
     super.initState();
 
-    _subscriptionsList.add(
-        _viewModel.state.listen((state) => setState(() => _state = state)));
+    _subscriptionsList.add(_viewModel.state
+        .skip(1) // skip the initial state since we already set that
+        .listen((state) => setState(() => _state = state)));
 
     afterViewModelInit();
   }

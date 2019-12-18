@@ -35,7 +35,7 @@ abstract class StatefulViewModelWidget<W extends StatefulWidget,
 
     // immediately set the initial state to avoid ui glitches
     // cause by the async delivery of states
-    setState(() => _state = _viewModel.initialState);
+    setState(() => _state = _viewModel.getState());
 
     super.initState();
 

@@ -11,6 +11,7 @@ dependencies:
   stateful_view_model:
     git:
       url: git://github.com/tikkrapp/stateful_view_model.git
+      ref: feature/rx-dart-migraiton
 
   flutter:
     sdk: flutter
